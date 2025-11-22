@@ -24,10 +24,7 @@ export default function Home() {
       {/* Hero Section */}
       <section className="container mx-auto px-4 py-16 md:py-24">
         <div className="neo-card bg-[var(--color-yellow)] p-8 md:p-12 text-center">
-          <h1
-            className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6"
-            style={{ fontFamily: "var(--font-display)" }}
-          >
+          <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 font-display">
             AI Video Text Layering Made Stupid Simple
           </h1>
           <p className="text-lg md:text-xl lg:text-2xl mb-8 max-w-2xl mx-auto text-neutral-800">
@@ -60,10 +57,7 @@ export default function Home() {
 
       {/* Features Section */}
       <section className="container mx-auto px-4 py-16">
-        <h2
-          className="text-3xl md:text-4xl font-bold text-center mb-12"
-          style={{ fontFamily: "var(--font-display)" }}
-        >
+        <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 font-display">
           Powerful Features
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -125,10 +119,7 @@ export default function Home() {
 
       {/* How It Works Section */}
       <section className="container mx-auto px-4 py-16 bg-white">
-        <h2
-          className="text-3xl md:text-4xl font-bold text-center mb-12"
-          style={{ fontFamily: "var(--font-display)" }}
-        >
+        <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 font-display">
           How It Works
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
@@ -180,10 +171,7 @@ export default function Home() {
 
       {/* Templates Preview Section */}
       <section className="container mx-auto px-4 py-16">
-        <h2
-          className="text-3xl md:text-4xl font-bold text-center mb-12"
-          style={{ fontFamily: "var(--font-display)" }}
-        >
+        <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 font-display">
           AI-Generated Video Text Styles
         </h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -215,10 +203,7 @@ export default function Home() {
         <div className="max-w-4xl mx-auto">
           {/* Pay-As-You-Go */}
           <div className="mb-16">
-            <h3
-              className="text-2xl md:text-3xl font-bold text-center mb-4"
-              style={{ fontFamily: "var(--font-display)" }}
-            >
+            <h3 className="text-2xl md:text-3xl font-bold text-center mb-4 font-display">
               Pay-As-You-Go
             </h3>
             <p className="text-center text-neutral-600 mb-8">
@@ -260,10 +245,7 @@ export default function Home() {
 
           {/* Subscriptions */}
           <div>
-            <h3
-              className="text-2xl md:text-3xl font-bold text-center mb-4"
-              style={{ fontFamily: "var(--font-display)" }}
-            >
+            <h3 className="text-2xl md:text-3xl font-bold text-center mb-4 font-display">
               Subscriptions
             </h3>
             <p className="text-center text-neutral-600 mb-8">
@@ -312,10 +294,7 @@ export default function Home() {
       {/* Final CTA Section */}
       <section className="container mx-auto px-4 py-16">
         <div className="neo-card bg-[var(--color-pink)] p-12 text-center">
-          <h2
-            className="text-3xl md:text-5xl font-bold mb-6 text-white"
-            style={{ fontFamily: "var(--font-display)" }}
-          >
+          <h2 className="text-3xl md:text-5xl font-bold mb-6 text-white font-display">
             Start layering your videos in seconds.
           </h2>
           <Link href="/dashboard/editor">
@@ -452,9 +431,7 @@ export default function Home() {
 
           {/* Bottom Bar */}
           <div className="border-t-2 border-black pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
-            <div className="text-sm font-bold" style={{ fontFamily: "var(--font-display)" }}>
-              LAYERLY
-            </div>
+            <div className="text-sm font-bold font-display">LAYERLY</div>
             <div className="flex gap-6 text-sm">
               <Link href="#" className="text-neutral-600 hover:text-black">
                 Terms

@@ -26,9 +26,7 @@ export function Topbar({ title, className }: TopbarProps) {
           {/* TODO: wire real breadcrumbs when routing is finalized */}
           Dashboard
         </span>
-        <span className="text-lg font-semibold" style={{ fontFamily: "var(--font-display)" }}>
-          {title ?? "Layerly"}
-        </span>
+        <span className="text-lg font-semibold font-display">{title ?? "Layerly"}</span>
       </div>
 
       <div className="flex items-center gap-3 md:gap-4">

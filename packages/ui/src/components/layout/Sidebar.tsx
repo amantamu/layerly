@@ -88,10 +88,9 @@ export function Sidebar({ items, className }: SidebarProps) {
         <div className="mb-4 flex items-center justify-between">
           <span
             className={cn(
-              "text-sm font-bold uppercase tracking-[0.2em]",
+              "text-sm font-bold uppercase tracking-[0.2em] font-display",
               isCollapsed && "sr-only"
             )}
-            style={{ fontFamily: "var(--font-display)" }}
           >
             Layerly
           </span>
@@ -133,10 +132,7 @@ export function Sidebar({ items, className }: SidebarProps) {
             aria-label="Mobile sidebar navigation"
           >
             <div className="mb-4 flex items-center justify-between">
-              <span
-                className="text-sm font-bold uppercase tracking-[0.2em]"
-                style={{ fontFamily: "var(--font-display)" }}
-              >
+              <span className="text-sm font-bold uppercase tracking-[0.2em] font-display">
                 Layerly
               </span>
               <DialogPrimitive.Close asChild>

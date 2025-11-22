@@ -69,12 +69,7 @@ export default function Dashboard() {
 
       <section className="space-y-3">
         <div className="flex items-center justify-between gap-2">
-          <h2
-            className="text-lg font-semibold"
-            style={{ fontFamily: "var(--font-display)" }}
-          >
-            Recent Projects
-          </h2>
+          <h2 className="text-lg font-semibold font-display">Recent Projects</h2>
           {/* TODO: wire up link to full projects list */}
           <button
             type="button"
