@@ -10,7 +10,7 @@ export interface HeaderProps {
   user?: {
     initials: string;
   };
-  LinkComponent?: React.ElementType<{ href: string; className?: string; children?: React.ReactNode; [key: string]: any }>;
+  LinkComponent?: React.ComponentType<any>;
 }
 
 export function Header({
