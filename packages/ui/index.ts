@@ -15,5 +15,11 @@ export * from "./src/components/NeoBadge";
 export * from "./src/components/layout/Topbar";
 export * from "./src/components/layout/Sidebar";
 export * from "./src/components/layout/DashboardShell";
+export * from "./src/components/Toast";
+export * from "./src/components/ExportModal";
+export * from "./src/components/editor/Canvas";
+export * from "./src/components/editor/Timeline";
+export * from "./src/components/editor/LayerItem";
+export * from "./src/components/editor/StyleControls";
 export * from "./src/lib/utils";
 
