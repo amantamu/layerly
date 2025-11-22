@@ -67,6 +67,8 @@ export default function DashboardLayout({ children }: { children: ReactNode }) {
             navItems={navItems}
             currentPath={pathname}
             LinkComponent={Link}
+            accountHref="/dashboard/account"
+            brandingHref="/dashboard"
           />
         </div>
       </div>

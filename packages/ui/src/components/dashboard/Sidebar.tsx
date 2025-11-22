@@ -78,15 +78,20 @@ export function Sidebar({
     return <LinkComponent {...linkProps}>{linkContent}</LinkComponent>;
   };
 
-  const AccountLink = ({ children, ...props }: React.PropsWithChildren<{ href: string; className?: string }>) => {
+  const AccountLink = ({ children, href, className }: React.PropsWithChildren<{ href: string; className?: string }>) => {
+    const linkProps = {
+      href,
+      className,
+    };
+
     if (isMobile) {
       return (
         <SheetClose asChild>
-          <LinkComponent {...props}>{children}</LinkComponent>
+          <LinkComponent {...linkProps}>{children}</LinkComponent>
         </SheetClose>
       );
     }
-    return <LinkComponent {...props}>{children}</LinkComponent>;
+    return <LinkComponent {...linkProps}>{children}</LinkComponent>;
   };
 
   return (
@@ -140,11 +145,11 @@ export interface MobileSidebarProps extends SidebarProps {
 export function MobileSidebar({
   navItems,
   currentPath,
-  user,
-  accountHref,
-  brandingHref,
-  brandingLabel,
-  LinkComponent,
+  user = { name: "John Doe", initials: "JD", plan: "Free Plan" },
+  accountHref = "/dashboard/account",
+  brandingHref = "/dashboard",
+  brandingLabel = "LAYERLY",
+  LinkComponent = "a",
   trigger,
 }: MobileSidebarProps) {
   const defaultTrigger = (
