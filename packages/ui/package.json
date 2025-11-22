@@ -17,6 +17,7 @@
     "./tabs": "./src/components/tabs.tsx",
     "./badge": "./src/components/badge.tsx",
     "./skeleton": "./src/components/skeleton.tsx",
+    "./dashboard": "./src/components/dashboard/index.ts",
     "./lib/utils": "./src/lib/utils.ts"
   },
   "scripts": {

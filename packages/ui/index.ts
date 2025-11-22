@@ -21,5 +21,6 @@ export * from "./src/components/editor/Canvas";
 export * from "./src/components/editor/Timeline";
 export * from "./src/components/editor/LayerItem";
 export * from "./src/components/editor/StyleControls";
+export * from "./src/components/dashboard";
 export * from "./src/lib/utils";
 

@@ -2,10 +2,31 @@
 
 import type { ReactNode } from "react";
 import Link from "next/link";
-import { DashboardSidebar, MobileSidebar } from "@/components/dashboard/DashboardSidebar";
-import { DashboardHeader } from "@/components/dashboard/DashboardHeader";
+import { usePathname } from "next/navigation";
+import { Sidebar, Header, MobileSidebar } from "@layerly/ui/dashboard";
+import {
+  Layers,
+  Grid2X2,
+  Sparkles,
+  Coins,
+  Wallet,
+  MessageCircle,
+  User,
+} from "lucide-react";
+
+const navItems = [
+  { label: "My Projects", href: "/dashboard/my-projects", icon: Layers },
+  { label: "Templates", href: "/dashboard/templates", icon: Grid2X2 },
+  { label: "Editor", href: "/dashboard/editor", icon: Sparkles },
+  { label: "Credits", href: "/dashboard/credits", icon: Coins },
+  { label: "Billing", href: "/dashboard/billing", icon: Wallet },
+  { label: "Feedback Lab", href: "/dashboard/feedback-lab", icon: MessageCircle },
+  { label: "Account", href: "/dashboard/account", icon: User },
+];
 
 export default function DashboardLayout({ children }: { children: ReactNode }) {
+  const pathname = usePathname();
+
   return (
     <div className="flex h-screen overflow-hidden bg-[var(--color-blue)]/10">
       {/* Desktop Sidebar */}
@@ -28,7 +49,11 @@ export default function DashboardLayout({ children }: { children: ReactNode }) {
           </div>
           
           {/* Sidebar Content */}
-          <DashboardSidebar />
+          <Sidebar
+            navItems={navItems}
+            currentPath={pathname}
+            LinkComponent={Link}
+          />
         </div>
       </aside>
 
@@ -38,7 +63,11 @@ export default function DashboardLayout({ children }: { children: ReactNode }) {
           <Link href="/dashboard" className="text-lg font-bold font-display uppercase">
             LAYERLY
           </Link>
-          <MobileSidebar />
+          <MobileSidebar
+            navItems={navItems}
+            currentPath={pathname}
+            LinkComponent={Link}
+          />
         </div>
       </div>
 
@@ -48,11 +77,11 @@ export default function DashboardLayout({ children }: { children: ReactNode }) {
         <div className="md:hidden h-[60px]" />
         
         {/* Dashboard Header */}
-        <DashboardHeader title="Dashboard" />
+        <Header title="Dashboard" LinkComponent={Link} />
         
         {/* Scrollable content */}
         <main className="flex-1 overflow-y-auto">
-          <div className="container mx-auto px-4 py-6 md:px-8 md:py-8">
+          <div className="p-6 max-w-7xl mx-auto">
             {children}
           </div>
         </main>
