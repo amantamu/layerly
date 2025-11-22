@@ -1,0 +1,41 @@
+/* Neo-brutalist theme tokens for Layerly dashboard */
+:root {
+  --color-black: #000000;
+  --color-white: #ffffff;
+  --color-yellow: #f7ff00;
+  --color-blue: #00a8ff;
+  --color-pink: #ff3b8a;
+
+  --border-primary: 4px solid var(--color-black);
+  --border-secondary: 2px solid var(--color-black);
+
+  --shadow-hard: 0 6px 0 var(--color-black);
+
+  --radius-sm: 6px;
+
+  --font-display: "Inter, ui-sans-serif, system-ui";
+}
+
+.heavy-border {
+  border: var(--border-primary);
+}
+
+.heavy-shadow {
+  box-shadow: var(--shadow-hard);
+}
+
+.neo-button {
+  border-radius: var(--radius-sm);
+  border: var(--border-primary);
+  box-shadow: var(--shadow-hard);
+  font-family: var(--font-display);
+}
+
+.neo-card {
+  border-radius: var(--radius-sm);
+  border: var(--border-primary);
+  box-shadow: var(--shadow-hard);
+  background-color: var(--color-white);
+}
+
+

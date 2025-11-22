@@ -4,23 +4,47 @@
   "private": true,
   "main": "./index.ts",
   "types": "./index.ts",
+  "exports": {
+    ".": "./index.ts",
+    "./button": "./src/components/button.tsx",
+    "./input": "./src/components/input.tsx",
+    "./card": "./src/components/card.tsx",
+    "./textarea": "./src/components/textarea.tsx",
+    "./dropdown-menu": "./src/components/dropdown-menu.tsx",
+    "./dialog": "./src/components/dialog.tsx",
+    "./sheet": "./src/components/sheet.tsx",
+    "./navigation-menu": "./src/components/navigation-menu.tsx",
+    "./tabs": "./src/components/tabs.tsx",
+    "./badge": "./src/components/badge.tsx",
+    "./skeleton": "./src/components/skeleton.tsx",
+    "./lib/utils": "./src/lib/utils.ts"
+  },
   "scripts": {
     "lint": "eslint .",
     "type-check": "tsc --noEmit"
   },
   "dependencies": {
+    "@radix-ui/react-dialog": "^1.1.15",
+    "@radix-ui/react-dropdown-menu": "^2.1.16",
+    "@radix-ui/react-navigation-menu": "^1.2.14",
+    "@radix-ui/react-slot": "^1.2.4",
+    "@radix-ui/react-tabs": "^1.1.13",
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "tailwind-merge": "^3.4.0"
   },
   "devDependencies": {
     "@types/react": "^18.2.0",
     "@types/react-dom": "^18.2.0",
-    "typescript": "^5.0.0",
-    "eslint": "^8.0.0"
+    "eslint": "^8.0.0",
+    "next": "^14.0.0",
+    "typescript": "^5.0.0"
   },
   "peerDependencies": {
+    "next": "^14.0.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   }
 }
-
